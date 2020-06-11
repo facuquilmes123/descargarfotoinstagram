@@ -6,7 +6,7 @@ const axios = require("axios");
 var bodyParser = require("body-parser");
 
 var app = express();
-app.set('port', (process.env.PORT || 3000))
+app.set('port', (process.env.PORT || 8080))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 //variables
