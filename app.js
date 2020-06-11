@@ -6,7 +6,7 @@ const axios = require("axios");
 var bodyParser = require("body-parser");
 
 var app = express();
-app.set('port', (process.env.PORT || 8080))
+app.set('port', (process.env.PORT || 80))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 //variables
@@ -65,6 +65,6 @@ app.post("/username", async (req, res)=> {
     }
 });
 
-app.listen(8080, () => {
+app.listen(80, () => {
     console.log("Serever online");
  });
